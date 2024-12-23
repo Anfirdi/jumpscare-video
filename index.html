@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Free Fire</title>
+    <style>
+        *, html {
+            margin: 0;
+            padding: 0;
+        }
+        /* Menetapkan container untuk memusatkan semua konten */
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        /* Menetapkan wrapper untuk mengatur video penuh layar */
+        .wrapper {
+            display: flex;
+            width: 100%;
+            height: 100%; /* Mengatur wrapper untuk mengambil seluruh tinggi layar */
+            position: relative; /* Posisi relative agar video diatur dengan benar */
+        }
+        /* Video di dalam wrapper diatur untuk mengisi layar */
+        .wrapper > video {
+            position: absolute; /* Posisi absolut untuk memastikan video mengisi layar */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Memastikan video memenuhi area tanpa mengubah rasio aspek */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <video class="video" src="nun.mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+        <div class="wrapper-audio">
+            <audio src="Deathscream.mp3" type="audio/mpeg" autoplay loop></audio>
+        </div>
+    </div>
+</body>
+</html>
